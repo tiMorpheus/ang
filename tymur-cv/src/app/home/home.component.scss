@@ -1,0 +1,177 @@
+
+
+
+.about-me-home{
+
+  .flex-container{
+
+    padding: 0 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    .my-img-wrap{
+      width: 100%;
+
+      .me-img{
+        width: 100%;
+      }
+    }
+
+
+  }
+
+
+}
+
+
+@media screen and (min-width: 991px){
+
+
+
+
+  .about-me-home{
+
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .flex-container{
+
+      padding: 0 ;
+
+      flex-wrap: nowrap;
+      align-items: center;
+
+
+      .my-img-wrap{
+        width: 300px;
+        margin-right: 100px;
+
+        .me-img{
+          width: 300px;
+
+          border-radius: 50%;
+        }
+      }
+
+
+      .about-me-home-block{
+
+        .block-header{
+          .about-me-title{
+            margin-top: 0;
+            font-size: 36px;
+            margin-bottom: 8px;
+            font-weight: bold;
+          }
+
+          .my-job-title{
+            margin-top: 0;
+            font-size: 18px;
+            color: #999999;
+            margin-bottom: 40px;
+          }
+
+        }
+
+
+        .block-content{
+          .my-text{
+            font-size: 14px;
+
+            line-height: 30px;
+            max-width: 725px;
+
+          }
+
+
+        }
+
+
+
+      }
+
+
+
+
+    }
+
+
+
+  }
+
+}
+
+
+
+.sites-home-section{
+
+  .wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+
+    padding: 3em 0;
+
+    .sites-block-nav{
+
+
+
+
+      .flex-blocks{
+        display: flex;
+
+        .left-list-block{
+
+
+          .block-title{
+
+            font-size: 21px;
+            line-height: 24px;
+
+            font-weight: bold;
+            width: 400px;
+          }
+
+          .block-subtitle{
+            margin-top: 0;
+            font-size: 18px;
+            color: #999999;
+            margin-bottom: 20px;
+          }
+
+
+          .sites{
+
+            li{
+
+              font-size: 16px;
+              line-height: 18px;
+
+              margin-bottom: 8px;
+              font-weight: bold;
+
+              cursor: pointer;
+
+              &:hover{
+                color: #7700FF;
+              }
+
+
+              &.selected{
+
+                color: #8E2BFF;
+
+              }
+            }
+          }
+        }
+
+        .right-description-block {
+
+        }
+
+      }
+    }
+
+  }
+}

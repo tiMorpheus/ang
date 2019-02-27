@@ -1,0 +1,42 @@
+
+
+.testimonical-section{
+  width: 100%;
+
+  .container{
+
+  }
+}
+
+.wrap{
+  //position: fixed;
+  //margin-top: 104em;
+}
+
+.testi-item{
+    height: 380px;
+    width: 680px;
+    background-color: #F5F5F5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+
+
+}
+
+
+@media (min-width: 68em) {
+  .testimonical-section{
+    padding: 0;
+
+    .container{
+      padding: 0;
+
+      max-width: 924px;
+      margin: 0 auto;
+    }
+  }
+
+}

@@ -1,0 +1,22 @@
+<div *ngIf="site" class="site-info-block">
+
+
+    <!--<button (click)="showSiteDemo()">show demo</button>-->
+    <a class="site-link" href="https://{{site.name}}">{{site.name }} </a>
+
+  <p class="site-excerpt">
+    {{site.excerpt}}
+  </p>
+
+  <p>
+    {{site.description}}
+  </p>
+
+    <div class="modal-site">
+        <iframe src="https://{{site.name}}"></iframe>
+
+    </div>
+</div>
+
+
+

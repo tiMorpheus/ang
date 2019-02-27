@@ -1,0 +1,84 @@
+
+
+
+<div class="about-me-home">
+
+
+  <div class="flex-container">
+
+
+    <div class="my-img-wrap">
+
+      <img class="me-img" src="assets/img/me.jpeg" alt="">
+
+    </div>
+
+
+    <div class="about-me-home-block">
+
+      <div class="block-header">
+
+        <h4 class="about-me-title"> Tymur Tolochko</h4>
+        <h5 class="my-job-title">Web Developer</h5>
+      </div>
+
+
+      <div class="block-content">
+
+
+        <p class="my-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda, autem dignissimos eaque fuga laudantium libero maiores optio quia reiciendis suscipit, totam, voluptatem? A dolorum fuga incidunt laborum reprehenderit. Exercitationem harum non praesentium quas ullam! Aliquid earum, illo, laboriosam magnam molestias optio possimus quas quia reprehenderit, sint veniam veritatis vero!
+        </p>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<div class="sites-home-section">
+
+
+
+  <div class="wrapper">
+
+      <div class="sites-block-nav">
+
+
+        <div class="flex-blocks">
+          <div class="left-list-block">
+            <h2 class="block-title">Project I've been working with:</h2>
+            <h3 class="block-subtitle">Click to see the description</h3>
+
+
+            <ul class="sites">
+              <li *ngFor="let site of sites"
+                  [class.selected]="site === selectedSite"
+                  (click)="onSelect(site)">
+
+
+                <img src="assets/img/projects/small-nav/{{site.imgName}}" alt="img-{{site.name}}">
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="right-description-block">
+            <app-site-detail [site]="selectedSite"></app-site-detail>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+  </div>
+</div>
