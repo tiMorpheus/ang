@@ -11,8 +11,8 @@ import {TranslateService} from "@ngx-translate/core";
 })
 export class NavComponent implements OnInit {
 
-  sidebarHidden = true;
-
+  sidebarHidden = false;
+  
   constructor(public translate: TranslateService) {
       translate.addLangs(['en', 'ru']);
       translate.setDefaultLang('en');
@@ -22,6 +22,7 @@ export class NavComponent implements OnInit {
   }
 
   ngOnInit() {
+
   }
 
 

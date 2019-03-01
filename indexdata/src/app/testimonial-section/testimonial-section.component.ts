@@ -16,22 +16,22 @@ export class TestimonialSectionComponent implements OnInit {
 
   ngOnInit() {
       $('.owl-carousel').owlCarousel({
-          loop:true,
-          margin:50,
+          // loop:true,
+          margin:100,
           responsiveClass:true,
+          nav: false,
           responsive:{
               0:{
                   items:1,
-                  nav:true
               },
               600:{
                   items:2,
-                  nav:false
               },
               1000:{
                   items:2,
-                  nav:true,
-                  loop:false
+                  loop:false,
+                margin:100,
+
               }
           }
       })

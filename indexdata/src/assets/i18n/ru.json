@@ -16,8 +16,11 @@
   "HOTLINE":{
     "TITLE":"Горячая линия:"
 
-  }
+  },
+  "TESTIMONICAL": {
+    "NAV-SPAN":"из"
 
+  }
 
 
 }

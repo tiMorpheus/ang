@@ -15,7 +15,7 @@
 
   .container{
 
-    padding: 72px 0  20px;
+    padding: 15px;
 
     //display: flex;
     //flex-direction: column;
@@ -29,16 +29,18 @@
     .contact-section-title{
         color: #000000;
         font-family: "Rounded Mplus 1c Black";
-        font-size: 40px;
-        line-height: 60px;
-      margin-bottom: 16px;
+        font-size: 20px;
+        line-height: 29px;
+      margin-bottom: 12px;
+
+      text-transform: uppercase;
     }
 
 
     .contact-header-info{
       display: flex;
-      align-items: center;
-      margin-bottom: 130px;
+      flex-direction: column;
+      margin-bottom: 24px;
 
       .sidebar-hotline-sign{
         display: flex;
@@ -66,13 +68,14 @@
 
     }
     .contact-header-description{
-        max-width: 344px;
-        color: #000000;
-        font-family: "IBM Plex Sans";
-        font-size: 16px;
-        line-height: 20px;
-      margin-right: 112px;
+      color: #000000;
+      font-family: "IBM Plex Sans";
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 26px;
     }
+
+
 
 
 
@@ -86,6 +89,7 @@
     .follow-us{
 
       display: flex;
+      flex-direction: column;
 
       .follow-us-text{
         color: #000000;
@@ -93,6 +97,7 @@
         font-size: 16px;
         line-height: 20px;
         margin-right: 16px;
+        margin-bottom: 12px;
       }
 
       .social-follow-link {
@@ -104,7 +109,6 @@
         margin-right: 16px;
       }
     }
-    margin-top: 4em;
 
 
   }
@@ -115,7 +119,11 @@
 
 @media (min-width: 68em) {
 
+
   .contacts-section {
+
+    padding: 70px 0;
+
 
     .container {
 
@@ -125,9 +133,25 @@
       margin: 0 auto;
 
 
+      .contact-section-title{
+
+          font-size: 40px;
+          line-height: 60px;
+        margin-bottom: 16px;
+      }
+
+      .contact-header-info{
+        flex-direction: row;
+
+        .contact-header-description{
+          max-width: 350px;
+          margin-right: 112px;
+        }
+      }
     }
 
     .social-block{
+
 
       width: 100%;
 
@@ -155,9 +179,9 @@
 
     input 	,textarea			{
       font-size:18px;
-      padding:10px 10px 10px 5px;
+      width: 100%;
+      padding:10px 0px 10px 5px;
       display:block;
-      width:400px;
       border:none;
       border-bottom:1px solid rgba(0,0,0,0.1);
       background: transparent;
@@ -171,7 +195,7 @@
     label 				 {
         color: #000000;
         font-family: "IBM Plex Sans";
-        font-size: 16px;
+        font-size: 14px;
         line-height: 20px;
 
 
@@ -201,7 +225,6 @@
 
   .form-left{
 
-    margin-right: 56px;
   }
 
   input{
@@ -217,7 +240,7 @@
 
 
     /* BOTTOM BARS ================================= */
-    .bar 	{ position:relative; display:block; width:400px; }
+    .bar 	{ position:relative; display:block; width:100%; }
     .bar:before, .bar:after 	{
       content:'';
       height:2px;
@@ -280,6 +303,7 @@
     .flex-wrap{
 
       display: flex;
+      flex-direction: column;
 
     }
 
@@ -291,7 +315,7 @@
     .contact-submit-btn{
 
         height: 56px;
-        width: 196px;
+        width: 100%;
         border-radius: 6px;
         background-color: #5386FF;
       display: flex;
@@ -305,4 +329,28 @@
         font-weight: bold;
         line-height: 20px;
         text-align: center;
+      border: none;
     }
+
+
+@media (min-width: 68em) {
+
+  .flex-wrap{
+    flex-direction: row;
+
+    .form-left{
+      width: 400px;
+
+      margin-right: 56px;
+    }
+
+    textarea{
+      width: 400px;
+    }
+  }
+  .contact-submit-btn {
+    height: 56px;
+    width: 196px;
+  }
+
+}

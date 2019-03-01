@@ -14,5 +14,9 @@
   },
   "HOTLINE":{
     "TITLE":"Hotline"
+  },
+  "TESTIMONICAL": {
+    "NAV-SPAN":"from"
+
   }
 }

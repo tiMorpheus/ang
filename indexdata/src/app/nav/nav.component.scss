@@ -1,5 +1,6 @@
 .lang-wrap{
   margin-top: 36px;
+  padding-left: 16px;
 
   span{
     //opacity: 0.3;
@@ -34,9 +35,11 @@
 
 .logo{
 
-  background: red;
-    height: 160px;
-    width: 201px;
+  background: url("/assets/logo@2x.png") no-repeat;
+  background-size: contain;
+
+  height: 160px;
+  width: 201px;
 
   display: none;
 }
@@ -118,6 +121,7 @@ transition: all 0.6s;
   height: 100%;
   background: #fff;
   color: black;
+  z-index: 100000;
 
   display: flex;
   flex-direction: column;
@@ -198,10 +202,12 @@ transition: all 0.6s;
     display: none;
   }
 
+  .lang-wrap{
+    padding-left: 0;
+  }
   .logo{
 
     display: block;
-    margin: 60px auto 60px;
   }
 
   /* Sidebar */
